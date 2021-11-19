@@ -5,6 +5,7 @@ export const enum PlatformId {
   Gitea = 'gitea',
   Github = 'github',
   Gitlab = 'gitlab',
+  Mock = 'mock',
 }
 
 export const GITHUB_API_USING_HOST_TYPES = [

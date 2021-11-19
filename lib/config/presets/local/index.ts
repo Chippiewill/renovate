@@ -5,6 +5,7 @@ import * as bitbucketServer from '../bitbucket-server';
 import * as gitea from '../gitea';
 import * as github from '../github';
 import * as gitlab from '../gitlab';
+import * as mock from '../mock';
 import type { Preset, PresetConfig } from '../types';
 
 const resolvers = {
@@ -14,6 +15,7 @@ const resolvers = {
   [PlatformId.Gitea]: gitea,
   [PlatformId.Github]: github,
   [PlatformId.Gitlab]: gitlab,
+  [PlatformId.Mock]: mock,
 };
 
 export function getPreset({
